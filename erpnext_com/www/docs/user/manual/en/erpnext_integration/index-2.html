@@ -1,0 +1,31 @@
+{% from "frappe_theme/templates/includes/docs.html" import cards, hero, signup_footer %}
+
+
+<section class='section'>
+	<div class='container'>
+		<h1 class='text-center'>ERPNext Documentation</h1>
+		<p class='lead text-center mb-3'>ERPNext is s comprehensive platform explanation of all
+			features from Finanical Accounting to Portals.</p>
+{{ cards([
+	{
+		'title': 'GMail',
+		'content': '<img src="https://cdn4.iconfinder.com/data/icons/free-colorful-icons/360/gmail.png">',
+		'link': '/docs/user/manual/en',
+		'badge': 'Official',
+		'badge_style': 'primary'
+	},
+	{
+		'title': 'Handbuch in Deutsch',
+		'content': 'Das ERPNext Handbuch enthält alle Informationen zur Konfiguration und Verwendung von ERPNext',
+		'link': '/docs/user/manual/de',
+		'badge': 'Community'
+	},
+	{
+		'title': 'Manual en Español',
+		'content': 'El Manual ERPNext convierte todo lo que desea saber sobre la configuración y el uso de ERPNext',
+		'link': '/docs/user/manual/es',
+		'badge': 'Community'
+	},
+]) }}
+	</div>
+</section>
