@@ -1,31 +1,107 @@
-{% from "frappe_theme/templates/includes/docs.html" import cards, hero, signup_footer %}
+{% from "frappe_theme/templates/includes/docs.html" import imgcards %}
 
-
-<section class='section'>
+<section class='section white'>
 	<div class='container'>
-		<h1 class='text-center'>ERPNext Documentation</h1>
-		<p class='lead text-center mb-3'>ERPNext is s comprehensive platform explanation of all
-			features from Finanical Accounting to Portals.</p>
-{{ cards([
-	{
-		'title': 'GMail',
-		'content': '<img src="https://cdn4.iconfinder.com/data/icons/free-colorful-icons/360/gmail.png">',
-		'link': '/docs/user/manual/en',
-		'badge': 'Official',
-		'badge_style': 'primary'
-	},
-	{
-		'title': 'Handbuch in Deutsch',
-		'content': 'Das ERPNext Handbuch enthält alle Informationen zur Konfiguration und Verwendung von ERPNext',
-		'link': '/docs/user/manual/de',
-		'badge': 'Community'
-	},
-	{
-		'title': 'Manual en Español',
-		'content': 'El Manual ERPNext convierte todo lo que desea saber sobre la configuración y el uso de ERPNext',
-		'link': '/docs/user/manual/es',
-		'badge': 'Community'
-	},
-]) }}
+		<h1>Integrate ERPNext with your favourite app!</h1>
+		<!--<p class='lead mx-0'>Explore modules to delve deep into ERPNext features</p> -->
+	</div>
+</section>
+
+<section class='section-bg section-sm'>
+	<div class='container'>
+		<h4 class='mb-0'>E-Commerce</h4>
+		{{ imgcards([
+			{
+				'title': 'Amazon MWS',
+				'content': '/docs/assets/img/erpnext_integrations/integrations/amazon-logo.png',
+				'link': '/docs/user/manual/en/introduction',
+			},
+			{
+				'title': 'WooCommerce',
+				'content': '/docs/assets/img/erpnext_integrations/integrations/woocommerce-logo.png',
+				'link': '/docs/user/manual/en/setting-up',
+			},
+			{
+				'title': 'Shopify',
+				'content': '/docs/assets/img/erpnext_integrations/integrations/shopify-logo.png',
+				'link': '/docs/user/manual/en/using-erpnext',
+			}
+		])}}
+	</div>
+</section>
+<section class='section-sm section-light'>
+	<div class='container'>
+		<h4>Payment Integrations</h4>
+		{{ imgcards([
+			{
+				'title': 'PayPal',
+				'link': '/docs/user/manual/en/accounts',
+				'content': '/docs/assets/img/erpnext_integrations/integrations/paypal-logo.png'
+			},
+			{
+				'title': 'Razorpay',
+				'link': '/docs/user/manual/en/stock',
+				'content': '/docs/assets/img/erpnext_integrations/integrations/razorpay-logo.png'
+			},
+			{
+				'title': 'Stripe',
+				'link': '/docs/user/manual/en/CRM',
+				'content': '/docs/assets/img/erpnext_integrations/integrations/stripe-logo.png'
+			},
+			{
+				'title': 'Braintree',
+				'link': '/docs/user/manual/en/selling',
+				'content': '/docs/assets/img/erpnext_integrations/integrations/braintree-logo.png'
+			},
+			{
+				'title': 'GoCardless',
+				'link': '/docs/user/manual/en/buying',
+				'content': '/docs/assets/img/erpnext_integrations/integrations/gocardless-blue-logo.png'
+			},
+		])
+		}}
+	</div>
+</section>
+<section class='section-bg section-sm'>
+	<div class='container'>
+		<h4>Banking Solutions</h4>
+		{{
+			imgcards([
+				{
+					'title': 'Plaid',
+					'link': '/docs/user/manual/en/manufacturing',
+					'content': '/docs/assets/img/erpnext_integrations/integrations/plaid-logo.png'
+				},
+			])
+		}}
+	</div>
+</section>
+<section class='section-sm section-light'>
+	<div class='container'>
+		<h4>Google Apps</h4>
+		{{
+			imgcards([
+				{
+					'title': 'Google Calendar',
+					'link': '/docs/user/manual/en/customize-erpnext',
+					'content': '/docs/assets/img/erpnext_integrations/integrations/Google-calendar-logo.png'
+				},
+				{
+					'title': 'Google Contacts',
+					'link': '/docs/user/manual/en/regional',
+					'content': '/docs/assets/img/erpnext_integrations/integrations/Google_Contacts_logo.png'
+				},
+				{
+					'title': 'Google Drive',
+					'link': '/docs/user/manual/en/erpnext_integration',
+					'content': '/docs/assets/img/erpnext_integrations/integrations/Google_Drive_logo.png'
+				},
+				{
+					'title': 'Google Maps',
+					'link': 'https://frappe.io/docs',
+					'content': '/docs/assets/img/erpnext_integrations/integrations/GoogleMaps_logo.png'
+				}
+			])
+		}}
 	</div>
 </section>
